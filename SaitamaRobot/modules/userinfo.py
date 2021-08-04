@@ -271,26 +271,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Path level of this person is 'Deva'."
+        text += "\n\nThe Devil Hunter level of this person is 'God'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Akatsuki Organization'."
+        text += "\n\nThis user is member of 'HUNTER ASSOCIATION'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Path level of this person is 'Asura'."
+        text += "\n\nThe Devil Hunter level of this person is 'Legend'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Path level of this person is 'Human'."
+        text += "\n\nThe Devil Hunter level of this person is 'Elite'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Path level of this person is 'Preta'."
+        text += "\n\nThe Devil Hunter level of this person is 'Master'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Path level of this person is 'Naraka'."
+        text += "\n\nThe Devil Hunter level of this person is 'Pro'."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/PainRobotUpdates/6">?</a>]'.format(
+        text += ' [<a href="https://t.me/Makima_Updates/16">?</a>]'.format(
             bot.username)
 
     try:
