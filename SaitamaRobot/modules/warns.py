@@ -60,19 +60,19 @@ def warn(
 
     if user.id in TIGERS:
         if warner:
-            message.reply_text("Tigers cant be warned.")
+            message.reply_text("Masters cant be warned.")
         else:
             message.reply_text(
-                "Tiger triggered an auto warn filter!\n I can't warn tigers but they should avoid abusing this."
+                "Master Devil Hunter triggered an auto warn filter!\n I can't warn Master Devil Hunters but they should avoid abusing this."
             )
         return
 
     if user.id in WOLVES:
         if warner:
-            message.reply_text("Naraka Paths are warn immune.")
+            message.reply_text("Pro Devil Hunters are warn immune.")
         else:
             message.reply_text(
-                "Naraka Path triggered an auto warn filter!\nI can't warn Naraka Paths but they should avoid abusing this."
+                "Pro Devil Hunter triggered an auto warn filter!\nI can't warn Pro Devil Hunters but they should avoid abusing this."
             )
         return
 
