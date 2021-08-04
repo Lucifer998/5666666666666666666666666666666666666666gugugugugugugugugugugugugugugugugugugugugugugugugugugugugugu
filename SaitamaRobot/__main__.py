@@ -52,14 +52,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, {}, my name is {}! 
-I am an Anime themed group management bot with some fun extras ;)
-You can find the list of available commands with /help
+Hey, {}, my name is {}! 
+I am a Devil Hunter from CHAINSAW MAN.
+I am Basically a Group Management bot. Built for Weebs, I am specialized in Managing groups of Anime Communities! With Some Unique Abilities.
+
+Use /help to know About my Commands
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a part of [Akatsuki](https://t.me/PainRobotSupport)
+I'm a part of [HUNTER ASSOCIATION](https://t.me/Makima_Support)
 Have a look at the following for an idea of some of the things I can help you with.
 
 *Main* commands available:
@@ -77,7 +79,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/9127957b0437ed3a64332.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/e853aac9926e3469f1f42.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -200,27 +202,27 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="➕ Add Pain To Your Group!",
+                            text="➕ Add Makima To Manage Your Group!",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                      ],
                      [
                          InlineKeyboardButton(
-                             text="⚙️ Support Group",
+                             text="💬Support Group",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="🔔Updates Channel",
-                             url="https://t.me/PainRobotUpdates")
+                             text="🛠Updates Channel",
+                             url="https://t.me/Makima_Updates")
                      ],
                      [
                          InlineKeyboardButton(
                              text="📖 Getting Started Guide",
-                             url="https://t.me/PainRobotUpdates/4")
+                             url="https://t.me/Makima_Updates/15")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="💾 Source Code",
-                             url="https://github.com/PAINBOI2008/PainRobot")
+                             text="💡Help And Commands",
+                             url="https://t.me/Makima_UltraBot?start=help")
                      ]]))
     else:
         update.effective_message.reply_text(
