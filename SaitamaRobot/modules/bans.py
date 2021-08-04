@@ -52,27 +52,27 @@ def ban(update: Update, context: CallbackContext) -> str:
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
             message.reply_text(
-                "Trying to put me against a THE DEVA Path huh?")
+                "Trying to put me against  THE GOD Devil Hunter huh?")
             return log_message
         elif user_id in DEV_USERS:
             message.reply_text("I can't act against my creators.")
             return log_message
         elif user_id in DRAGONS:
             message.reply_text(
-                "Fighting this Asura here will put villager lives at risk.")
+                "Fighting this Legend here will put villager lives at risk.")
             return log_message
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Akatsuki to fight a Human Path."
+                "Bring an order from HUNTER ASSOCIATION to fight a Elite Devil Hunter."
             )
             return log_message
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Akatsuki to fight a Preta Path."
+                "Bring an order from HUNTER ASSOCIATION to fight a Master Devil Hunter."
             )
             return log_message
         elif user_id in WOLVES:
-            message.reply_text("Naraka abilities make them ban immune!")
+            message.reply_text("Pro abilities make them ban immune!")
             return log_message
         else:
             message.reply_text("This user has immunity and cannot be banned.")
