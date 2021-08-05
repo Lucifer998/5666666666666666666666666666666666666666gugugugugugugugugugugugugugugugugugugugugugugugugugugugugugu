@@ -5,7 +5,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from aiohttp import ClientSession
 
-from SaitamaRobot import pgram as app
+from SaitamaRobot import pbot as app
 aiohttpsession = ClientSession()
 ARQ_API_KEY = "WBEHZZ-VEPXPP-KBGKCJ-WILPNE-ARQ"
 ARQ_API_URL = "https://thearq.tech"
