@@ -37,7 +37,6 @@ def isArgInt(message: Message) -> bool:
 
 
 @app.on_message(filters.command("q"))
-@capture_err
 async def quotly_func(_, message: Message):
     if not message.reply_to_message:
         await message.reply_text("Reply to a message to quote it.")
