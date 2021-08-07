@@ -13,7 +13,7 @@ from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-ELEVATED_USERS_FILE = os.Devil Hunters.join(os.getcwd(),
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(),
                                    'SaitamaRobot/elevated_users.json')
 
 
