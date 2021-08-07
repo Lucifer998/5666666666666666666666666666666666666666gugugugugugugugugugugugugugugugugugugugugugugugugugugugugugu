@@ -5,9 +5,8 @@ import aiohttp
 import youtube_dl
 
 from pyrogram import filters
-from SaitamaRobot import pgram
+from SaitamaRobot import pbot as pgram
 from youtube_search import YoutubeSearch
-from SaitamaRobot.pyrogramee.errors import capture_err
 
 
 def time_to_seconds(time):
@@ -55,7 +54,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎙 **Title**: [{title[:35]}]({link})\n🎬 **Source**: YouTube\n⏱️ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`\n📤 **By**: @IGRISROBOT '
+        rep = f'🎙 **Title**: [{title[:35]}]({link})\n🎬 **Source**: YouTube\n⏱️ **Duration**: `{duration}`\n👁‍🗨 **Views**: `{views}`\n📤 **By**: Kuchbhi '
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
