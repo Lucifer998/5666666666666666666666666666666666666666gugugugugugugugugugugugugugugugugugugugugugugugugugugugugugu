@@ -69,7 +69,7 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Organization\nI can't act against our own."
+            "That user is part of the Association\nI can't act against our own."
         )
         return
 
@@ -81,19 +81,19 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEMONS:
         message.reply_text(
-            "OOOH someone's trying to gban a Human Path! *grabs popcorn*")
+            "OOOH someone's trying to gban a Elite Devil Hunter! *grabs popcorn*")
         return
 
     if int(user_id) in TIGERS:
-        message.reply_text("That's a Preta Path! They cannot be banned!")
+        message.reply_text("That's a Master Devil Hunter! They cannot be banned!")
         return
 
     if int(user_id) in WOLVES:
-        message.reply_text("That's a Naraka Path! They cannot be banned!")
+        message.reply_text("That's a Pro Devil Hunter! They cannot be banned!")
         return
 
     if user_id == bot.id:
-        message.reply_text("You uhh...want me to punch myself?")
+        message.reply_text("You uhh...are u comedy me!! want me to punch myself?")
         return
 
     if user_id in [777000, 1087968824]:
