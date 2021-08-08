@@ -453,7 +453,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 __mod_name__ = "Image Editor"
 __help__ = """
  *IMAGE EDITOR*
-Pain has some advanced image editing tools inbuilt
+Makima has some Pro image editing tools inbuilt
 Bright, Mixed, Circle, Remove BG, Blur, Border, Invert, Glitch, Sticker Maker, Black And White, Rotate, Sapia, Contrast, Pencil And Cartoon.
 
 - /edit [reply to image]: Open the image editor.
