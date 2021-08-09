@@ -111,4 +111,4 @@ async def imdb(e):
 __help__ = """
   • `/imdb` <show/movie/anime> :- get ratings and every possible info of any show/movie/anime from [IMDB](https://m.imdb.com/)
 """
-__mod_name__ = "IMDB"
+__mod_name__ = "IMDB📋"
