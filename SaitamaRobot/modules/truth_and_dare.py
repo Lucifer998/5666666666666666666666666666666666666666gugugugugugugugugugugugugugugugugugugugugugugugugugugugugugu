@@ -24,7 +24,7 @@ __help__ = """
 
 """
 
-__mod_name__ = "Truth And Dare"
+__mod_name__ = "Truth And Dare🎰"
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 
