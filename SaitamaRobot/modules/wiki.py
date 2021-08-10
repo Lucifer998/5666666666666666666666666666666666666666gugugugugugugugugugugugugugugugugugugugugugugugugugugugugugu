@@ -48,7 +48,7 @@ __help__ = """
 *Admins only:*
  ❍ /wiki*:* shows an article from wikipedia.
 """
-__mod_name__ = "Wiki"
+__mod_name__ = "Wiki🌎"
 
 WIKI_HANDLER = DisableAbleCommandHandler("wiki", wiki)
 dispatcher.add_handler(WIKI_HANDLER)
