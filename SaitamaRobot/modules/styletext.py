@@ -492,7 +492,7 @@ __help__ = """
  - /lined <text>: lined your text!
 
 """
-__mod_name__ = "StyleText"
+__mod_name__ = "StyleText💫"
 
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble)
