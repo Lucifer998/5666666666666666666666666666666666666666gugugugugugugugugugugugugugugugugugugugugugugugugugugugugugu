@@ -262,4 +262,4 @@ __help__ = """
 
 """
 
-__mod_name__ = "Music"
+__mod_name__ = "Music🎸"
