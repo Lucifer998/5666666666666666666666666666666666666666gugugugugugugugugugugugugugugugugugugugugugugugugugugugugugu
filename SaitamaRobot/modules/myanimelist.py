@@ -202,7 +202,7 @@ Get information about anime, manga or characters with the help of this module! A
  - /myupcoming: returns a list of new anime in the upcoming seasons.
  """
 
-__mod_name__ = "MyAnimeList"
+__mod_name__ = "MyAnimeList📝"
 
 
 ANIME_HANDLER = CommandHandler("myanime", myanime, pass_args=True)
