@@ -87,4 +87,4 @@ __help__ = """
  - /teletext: Get Telegraph Link of Replied Text
 """
 
-__mod_name__ = "Telegraph"
+__mod_name__ = "Telegraph📎"
