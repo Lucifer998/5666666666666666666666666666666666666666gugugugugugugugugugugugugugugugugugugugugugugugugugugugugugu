@@ -5,7 +5,7 @@ from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
 class Rules(BASE):
-    __tablename__ = "rules⛓"
+    __tablename__ = "rules"
     chat_id = Column(String(14), primary_key=True)
     rules = Column(UnicodeText, default="")
 
