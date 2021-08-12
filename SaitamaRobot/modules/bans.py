@@ -340,7 +340,7 @@ def stemp_ban(update: Update, context: CallbackContext) -> str:
 @user_admin
 @user_can_ban
 @loggable
-def almightypush(update: Update, context: CallbackContext) -> str:
+def kick(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     user = update.effective_user
     message = update.effective_message
@@ -366,7 +366,7 @@ def almightypush(update: Update, context: CallbackContext) -> str:
         return log_message
 
     if is_user_ban_protected(chat, user_id):
-        message.reply_text("I really wish I could push this user....")
+        message.reply_text("I really wish I could kick out this user....")
         return log_message
 
     res = chat.unban_member(user_id)  # unban on current user = kick
@@ -444,7 +444,7 @@ def skick(update: Update, context: CallbackContext) -> str:
 @run_async
 @bot_admin
 @can_restrict
-def pushme(update: Update, context: CallbackContext):
+def kickme(update: Update, context: CallbackContext):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
         update.effective_message.reply_text(
@@ -557,9 +557,9 @@ def selfunban(context: CallbackContext, update: Update) -> str:
 
 __help__ = """
 *Kicks:*
- - `/almightypush <userhandle>`*:* Pushes a user out of the group, (via handle, or reply)
+ - `/kick <userhandle>`*:* kicks a user out of the group, (via handle, or reply)
  - `/skick <userhandle>`*:* Silently kicks a user out of the group, (via handle, or reply)
- - `/pushme`*:* Pushes the user who used the command.
+ - `/kickme`*:* kicks the user who used the command.
  
 *Bans:*
  - `/ban <userhandle>`*:* Bans a user. (via handle, or reply)
@@ -575,12 +575,12 @@ __help__ = """
 BAN_HANDLER = CommandHandler("ban", ban)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban)
 STEMPBAN_HANDLER = CommandHandler(["stban"], stemp_ban)
-KICK_HANDLER = CommandHandler("almightypush", almightypush)
+KICK_HANDLER = CommandHandler("kick", kick)
 SKICK_HANDLER = CommandHandler("skick", skick)
 UNBAN_HANDLER = CommandHandler("unban", unban)
 ROAR_HANDLER = CommandHandler("roar", selfunban)
 KICKME_HANDLER = DisableAbleCommandHandler(
-    "pushme", pushme, filters=Filters.group)
+    "kickme", kickme, filters=Filters.group)
 SBAN_HANDLER = CommandHandler("sban", sban)
 
 dispatcher.add_handler(BAN_HANDLER)
