@@ -4,7 +4,7 @@ import string
 import aiohttp
 from cryptography.fernet import Fernet
 from pyrogram import filters
-from SaitamaRobot.modules.quotie import arq
+from SaitamaRobot.modules.quotly import arq
 from SaitamaRobot import pgram as app
 
 @app.on_message(filters.command("tr") & ~filters.edited)
