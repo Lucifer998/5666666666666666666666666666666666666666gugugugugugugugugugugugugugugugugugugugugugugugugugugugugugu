@@ -626,7 +626,7 @@ def devlist(update: Update, context: CallbackContext):
 #
 # ╔ *Debugging and Shell:*
 # ╠ `/debug <on/off>`*:* Logs commands to updates.txt
-$ ╠ `/logs`*:* Run this in support group to get logs in pm
+# ╠ `/logs`*:* Run this in support group to get logs in pm
 # ╠ `/eval`*:* Self explanatory
 $ ╠ `/sh`*:* Runs shell command
 # ╠ `/shell`*:* Runs shell command
