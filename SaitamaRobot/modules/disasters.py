@@ -556,45 +556,45 @@ Commands listed here only work for users with special access and are mainly used
 Group admins/group owners do not need these commands.
 
  ╔ List all special users:
- ╠ `/legends`*:* Lists all Legend Devil Hunters
- ╠ `/elites`*:* Lists all Elite Devil Hunters
- ╠ `/masters`*:* Lists all Master Devil Hunters
- ╠ `/pros`*:* Lists all Pro Devil Hunters
- ╠ `/founders`*:* Lists all Hunter Association members
- ╠ `/addlegend`*:* Adds a user to Legend
- ╠ `/addelite`*:* Adds a user to Elite
- ╠ `/addmaster`*:* Adds a user to Master
- ╠ `/addpro`*:* Adds a user to Pro
- ╚ `Add founders doesnt exist, devs should know how to add themselves`
+ ╠ /legends : Lists all Legend Devil Hunters
+ ╠ /elites : Lists all Elite Devil Hunters
+ ╠ /masters : Lists all Master Devil Hunters
+ ╠ /pros : Lists all Pro Devil Hunters
+ ╠ /founders : Lists all Hunter Association members
+ ╠ /addlegend : Adds a user to Legend
+ ╠ /addelite : Adds a user to Elite
+ ╠ /addmaster : Adds a user to Master
+ ╠ /addpro : Adds a user to Pro
+ ╚ Add founders doesnt exist, devs should know how to add themselves
 
- ╔ *Ping:*
- ╠ `/ping`*:* gets ping time of bot to telegram server
- ╚ `/pingall`*:* gets all listed ping times
+ ╔ Ping:
+ ╠ /ping : gets ping time of bot to telegram server
+ ╚ /pingall : gets all listed ping times
 
- ╔ *Broadcast: (Bot owner only)*
- ╠  *Note:* This supports basic markdown
- ╠ `/broadcastall`*:* Broadcasts everywhere
- ╠ `/broadcastusers`*:* Broadcasts too all users
- ╚ `/broadcastgroups`*:* Broadcasts too all groups
+ ╔ Broadcast: (Bot owner only)
+ ╠  Note: This supports basic markdown
+ ╠ /broadcastall : Broadcasts everywhere
+ ╠ /broadcastusers : Broadcasts too all users
+ ╚ /broadcastgroups : Broadcasts too all groups
 
- ╔ *Groups Info:*
- ╠ `/groups`*:* List the groups with Name, ID, members count as a txt
- ╠ `/leave <ID>`*:* Leave the group, ID must have hyphen
- ╠ `/stats`*:* Shows overall bot stats
- ╠ `/getchats`*:* Gets a list of group names the user has been seen in. Bot owner only
- ╚ `/ginfo username/link/ID`*:* Pulls info panel for entire group
+ ╔ Groups Info:
+ ╠ /groups : List the groups with Name, ID, members count as a txt
+ ╠ /leave <ID> : Leave the group, ID must have hyphen
+ ╠ /stats : Shows overall bot stats
+ ╠ /getchats : Gets a list of group names the user has been seen in. Bot owner only
+ ╚ /ginfo username/link/ID : Pulls info panel for entire group
 
- ╔ *Access control:*
- ╠ `/ignore`*:* Blacklists a user from
+ ╔ Access control:
+ ╠ /ignore : Blacklists a user from
  ╠  using the bot entirely
- ╠ `/lockdown <off/on>`*:* Toggles bot adding to groups
- ╠ `/notice`*:* Removes user from blacklist
- ╚ `/ignoredlist`*:* Lists ignored users
+ ╠ /lockdown <off/on> : Toggles bot adding to groups
+ ╠ /notice : Removes user from blacklist
+ ╚ /ignoredlist : Lists ignored users
 
  ╔ Module loading:
- ╠ `/listmodules`*:* Prints modules and their names
- ╠ `/unload <name>`*:* Unloads module dynamically
- ╚ `/load <name>`*:* Loads module
+ ╠ /listmodules : Prints modules and their names
+ ╠ /unload <name> :  Unloads module dynamically
+ ╚ /load <name> : Loads module
 
  ╔ Speedtest:
  ╚ /speedtest : Runs a speedtest and gives you 2 options to choose from, text or image output
@@ -636,7 +636,8 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "DEVILHUNTERS"
+__mod_name__ = "DevilHunters"
+
 __handlers__ = [
     SUDO_HANDLER,
     SUPPORT_HANDLER,
