@@ -23,6 +23,8 @@ class Config(object):
     SUPPORT_CHAT = 'OnePunchSupports'  #Your own group for support, do not add the @
     JOIN_LOGGER = -1522747866  #Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = -1522747866  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    MONGO_DB_URI = 'mongodb+srv://friday:friday@cluster0.jhe6o.mongodb.net/cluster0?retryWrites=true&w=majority'
+    REDIS_URL = 'redis://Botx:botxt@redis-16835.c51.ap-southeast-2-1.ec2.cloud.redislabs.com:16835/Botx'
 
     #RECOMMENDED
     SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
@@ -58,8 +60,6 @@ class Config(object):
     AI_API_KEY = 'awoo'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
-    MONGO_DB_URI = 'mongodb+srv://friday:friday@cluster0.jhe6o.mongodb.net/cluster0?retryWrites=true&w=majority'
-    REDIS_URL = 'redis://Botx:botxt@redis-16835.c51.ap-southeast-2-1.ec2.cloud.redislabs.com:16835/Botx'
 
 
 class Production(Config):
