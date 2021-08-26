@@ -59,7 +59,7 @@ class Config(object):
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
     MONGO_DB_URI = 'mongodb+srv://friday:friday@cluster0.jhe6o.mongodb.net/cluster0?retryWrites=true&w=majority'
-    REDIS_URL = ''
+    REDIS_URL = 'redis://Botx:botxt@redis-16835.c51.ap-southeast-2-1.ec2.cloud.redislabs.com:16835/Botx'
 
 
 class Production(Config):
