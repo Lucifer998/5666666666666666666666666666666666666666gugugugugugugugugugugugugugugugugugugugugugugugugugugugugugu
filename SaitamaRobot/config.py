@@ -24,7 +24,7 @@ class Config(object):
     JOIN_LOGGER = -1522747866  #Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = -1522747866  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     MONGO_DB_URI = 'mongodb+srv://friday:friday@cluster0.jhe6o.mongodb.net/cluster0?retryWrites=true&w=majority'
-    REDIS_URL = 'redis://Botx:botxt@redis-16835.c51.ap-southeast-2-1.ec2.cloud.redislabs.com:16835/Botx'
+    REDIS_URL = 'redis://Botx:Garenaff@1@redis-17119.c54.ap-northeast-1-2.ec2.cloud.redislabs.com:17119/Botx'
 
     #RECOMMENDED
     SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
