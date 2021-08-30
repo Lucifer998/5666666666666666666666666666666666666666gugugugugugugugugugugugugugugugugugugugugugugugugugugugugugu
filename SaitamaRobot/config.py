@@ -27,7 +27,7 @@ class Config(object):
     REDIS_URL = 'redis://Botx:Garenaff@1@redis-17119.c54.ap-northeast-1-2.ec2.cloud.redislabs.com:17119/Botx'
 
     #RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgres://deoxvvrd:kE3JdCk9Gb05C-1FSS7ZvNX89KiHNEd5@chunee.db.elephantsql.com/deoxvvrd'  # needed for any database modules
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = False
